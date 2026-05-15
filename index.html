@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+ 
 <style>
   :root {
     --plum: #5C1F2E;
@@ -29,11 +29,11 @@
     --display: 'Fraunces', Georgia, serif;
     --body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
-
+ 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: var(--body);
     color: var(--charcoal);
@@ -43,7 +43,7 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
+ 
   /* ========== NAV ========== */
   nav {
     position: fixed;
@@ -57,7 +57,7 @@
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
   }
-
+ 
   .nav-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -65,7 +65,7 @@
     justify-content: space-between;
     align-items: center;
   }
-
+ 
   .logo {
     font-family: var(--display);
     font-weight: 700;
@@ -74,13 +74,13 @@
     color: var(--charcoal);
     text-decoration: none;
   }
-
+ 
   .logo em {
     font-style: italic;
     color: var(--red);
     font-weight: 700;
   }
-
+ 
   .nav-cta {
     background: var(--plum);
     color: white;
@@ -91,12 +91,12 @@
     font-size: 0.9rem;
     transition: all 0.25s ease;
   }
-
+ 
   .nav-cta:hover {
     background: var(--red);
     transform: translateY(-1px);
   }
-
+ 
   /* ========== HERO ========== */
   .hero {
     padding: 10rem 2rem 6rem;
@@ -104,7 +104,7 @@
     overflow: hidden;
     background: var(--white);
   }
-
+ 
   .hero::before {
     content: '';
     position: absolute;
@@ -116,7 +116,7 @@
     z-index: 0;
     pointer-events: none;
   }
-
+ 
   .hero::after {
     content: '';
     position: absolute;
@@ -128,7 +128,7 @@
     z-index: 0;
     pointer-events: none;
   }
-
+ 
   .hero-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -139,7 +139,7 @@
     position: relative;
     z-index: 1;
   }
-
+ 
   .launch-badge {
     display: inline-flex;
     align-items: center;
@@ -154,7 +154,7 @@
     margin-bottom: 2rem;
     animation: fadeInUp 0.6s ease backwards;
   }
-
+ 
   .launch-badge::before {
     content: '';
     width: 8px;
@@ -163,12 +163,12 @@
     border-radius: 50%;
     animation: pulse 2s infinite;
   }
-
+ 
   @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.4; transform: scale(1.4); }
   }
-
+ 
   h1 {
     font-family: var(--display);
     font-weight: 700;
@@ -180,7 +180,7 @@
     animation: fadeInUp 0.8s ease backwards;
     animation-delay: 0.1s;
   }
-
+ 
   h1 em {
     font-style: italic;
     color: var(--red);
@@ -188,7 +188,7 @@
     display: inline-block;
     position: relative;
   }
-
+ 
   h1 em::after {
     content: '';
     position: absolute;
@@ -200,7 +200,7 @@
     z-index: -1;
     transform: skewX(-5deg);
   }
-
+ 
   .hero-lead {
     font-size: 1.3rem;
     line-height: 1.5;
@@ -210,7 +210,7 @@
     animation: fadeInUp 0.8s ease backwards;
     animation-delay: 0.2s;
   }
-
+ 
   .hero-ctas {
     display: flex;
     gap: 1rem;
@@ -218,7 +218,7 @@
     animation: fadeInUp 0.8s ease backwards;
     animation-delay: 0.3s;
   }
-
+ 
   .btn-primary {
     background: var(--red);
     color: white;
@@ -233,13 +233,13 @@
     transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
     box-shadow: 0 4px 14px rgba(255, 58, 45, 0.25);
   }
-
+ 
   .btn-primary:hover {
     background: var(--red-hover);
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(255, 58, 45, 0.35);
   }
-
+ 
   .btn-plum {
     background: var(--plum);
     color: white;
@@ -253,12 +253,12 @@
     display: inline-block;
     transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-
+ 
   .btn-plum:hover {
     background: var(--plum-deep);
     transform: translateY(-2px);
   }
-
+ 
   .btn-secondary {
     background: transparent;
     color: var(--charcoal);
@@ -269,11 +269,11 @@
     display: inline-block;
     transition: color 0.2s ease;
   }
-
+ 
   .btn-secondary:hover {
     color: var(--red);
   }
-
+ 
   /* ========== PHONE MOCKUP ========== */
   .phone-wrap {
     position: relative;
@@ -282,7 +282,7 @@
     animation: fadeInUp 1s ease backwards;
     animation-delay: 0.4s;
   }
-
+ 
   .phone-frame {
     width: 100%;
     max-width: 340px;
@@ -296,11 +296,11 @@
     transform: rotate(-3deg);
     transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-
+ 
   .phone-frame:hover {
     transform: rotate(0deg) scale(1.02);
   }
-
+ 
   .phone-screen {
     background: white;
     border-radius: 38px;
@@ -311,7 +311,7 @@
     padding: 2.5rem 1.5rem 1rem;
     font-size: 0.85rem;
   }
-
+ 
   .phone-greeting {
     font-family: var(--display);
     font-size: 1.75rem;
@@ -319,13 +319,13 @@
     margin-bottom: 0.25rem;
     color: var(--charcoal);
   }
-
+ 
   .phone-subtitle {
     color: var(--gray);
     font-size: 0.85rem;
     margin-bottom: 1.25rem;
   }
-
+ 
   .phone-search {
     background: var(--off-white);
     padding: 0.75rem 1rem;
@@ -334,7 +334,7 @@
     font-size: 0.8rem;
     margin-bottom: 1rem;
   }
-
+ 
   .phone-btn-main {
     background: var(--red);
     color: white;
@@ -342,73 +342,73 @@
     border-radius: 18px;
     margin-bottom: 0.75rem;
   }
-
+ 
   .phone-btn-main-title {
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 0.25rem;
   }
-
+ 
   .phone-btn-main-sub {
     font-size: 0.7rem;
     opacity: 0.9;
   }
-
+ 
   .phone-btn-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     margin-bottom: 0.75rem;
   }
-
+ 
   .phone-btn-small {
     background: var(--off-white);
     padding: 1rem;
     border-radius: 14px;
     text-align: center;
   }
-
+ 
   .phone-btn-small-title {
     font-weight: 700;
     font-size: 0.95rem;
     margin-bottom: 0.15rem;
     color: var(--charcoal);
   }
-
+ 
   .phone-btn-small-sub {
     font-size: 0.65rem;
     color: var(--gray);
   }
-
+ 
   .phone-btn-pantry {
     background: var(--off-white);
     padding: 1rem;
     border-radius: 14px;
   }
-
+ 
   .phone-btn-pantry-title {
     font-weight: 700;
     font-size: 0.95rem;
     margin-bottom: 0.15rem;
     color: var(--charcoal);
   }
-
+ 
   .phone-btn-pantry-sub {
     font-size: 0.65rem;
     color: var(--gray);
   }
-
+ 
   /* ========== SECTIONS ========== */
   section {
     padding: 6rem 2rem;
     position: relative;
   }
-
+ 
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
-
+ 
   .eyebrow {
     font-size: 0.75rem;
     font-weight: 700;
@@ -418,11 +418,11 @@
     margin-bottom: 1rem;
     display: inline-block;
   }
-
+ 
   .eyebrow-light {
     color: var(--soft-pink);
   }
-
+ 
   h2 {
     font-family: var(--display);
     font-weight: 700;
@@ -432,42 +432,42 @@
     color: var(--charcoal);
     margin-bottom: 1.5rem;
   }
-
+ 
   h2 em {
     font-style: italic;
     color: var(--red);
     font-weight: 400;
   }
-
+ 
   h2.on-dark {
     color: white;
   }
-
+ 
   h2.on-dark em {
     color: var(--soft-pink);
   }
-
+ 
   .section-lead {
     font-size: 1.2rem;
     color: var(--gray);
     max-width: 580px;
     line-height: 1.5;
   }
-
+ 
   .section-lead.on-dark {
     color: rgba(255, 255, 255, 0.8);
   }
-
+ 
   .section-header {
     text-align: center;
     max-width: 680px;
     margin: 0 auto 4rem;
   }
-
+ 
   .section-header .section-lead {
     margin: 0 auto;
   }
-
+ 
   /* ========== PROBLEM SECTION (PLUM DARK) ========== */
   .problem {
     background: var(--plum);
@@ -476,7 +476,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .problem::before {
     content: '';
     position: absolute;
@@ -487,21 +487,21 @@
     background: radial-gradient(circle, rgba(255, 58, 45, 0.15) 0%, transparent 60%);
     pointer-events: none;
   }
-
+ 
   .problem-inner {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
   }
-
+ 
   .problem-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 3rem;
   }
-
+ 
   .problem-item {
     padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
@@ -510,12 +510,12 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
   }
-
+ 
   .problem-item:hover {
     background: rgba(255, 255, 255, 0.08);
     transform: translateY(-4px);
   }
-
+ 
   .problem-item-time {
     font-family: var(--display);
     font-size: 2rem;
@@ -525,13 +525,13 @@
     letter-spacing: -0.02em;
     font-style: italic;
   }
-
+ 
   .problem-item-text {
     color: rgba(255, 255, 255, 0.85);
     font-weight: 500;
     line-height: 1.4;
   }
-
+ 
   /* ========== FEATURES ========== */
   .features-grid {
     display: grid;
@@ -539,7 +539,7 @@
     gap: 1.5rem;
     margin-top: 3rem;
   }
-
+ 
   .feature-card {
     background: var(--white);
     padding: 2.5rem 2rem;
@@ -549,13 +549,13 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .feature-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 40px rgba(92, 31, 46, 0.1);
     border-color: var(--plum);
   }
-
+ 
   .feature-card::before {
     content: '';
     position: absolute;
@@ -568,11 +568,11 @@
     transform-origin: left;
     transition: transform 0.4s ease;
   }
-
+ 
   .feature-card:hover::before {
     transform: scaleX(1);
   }
-
+ 
   .feature-number {
     font-family: var(--display);
     font-size: 3rem;
@@ -583,7 +583,7 @@
     letter-spacing: -0.04em;
     font-style: italic;
   }
-
+ 
   .feature-title {
     font-family: var(--display);
     font-size: 1.4rem;
@@ -591,13 +591,13 @@
     margin-bottom: 0.75rem;
     color: var(--charcoal);
   }
-
+ 
   .feature-desc {
     color: var(--gray);
     line-height: 1.5;
     font-size: 0.95rem;
   }
-
+ 
   /* ========== STAT CALLOUT (PLUM DARK) ========== */
   .stat {
     background: var(--plum-deep);
@@ -607,7 +607,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .stat::before {
     content: '';
     position: absolute;
@@ -618,7 +618,7 @@
     background: radial-gradient(circle, rgba(255, 58, 45, 0.18) 0%, transparent 60%);
     pointer-events: none;
   }
-
+ 
   .stat::after {
     content: '';
     position: absolute;
@@ -629,14 +629,14 @@
     background: radial-gradient(circle, rgba(245, 201, 201, 0.08) 0%, transparent 60%);
     pointer-events: none;
   }
-
+ 
   .stat-inner {
     max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
   }
-
+ 
   .stat-number {
     font-family: var(--display);
     font-size: clamp(5rem, 14vw, 10rem);
@@ -648,7 +648,7 @@
     position: relative;
     display: inline-block;
   }
-
+ 
   .stat-number em {
     font-size: 0.35em;
     color: white;
@@ -658,7 +658,7 @@
     margin-left: 0.3em;
     letter-spacing: -0.02em;
   }
-
+ 
   .stat-label {
     font-family: var(--display);
     font-size: clamp(1.2rem, 2.5vw, 1.75rem);
@@ -670,12 +670,12 @@
     position: relative;
     letter-spacing: -0.01em;
   }
-
+ 
   .stat-label em {
     font-style: italic;
     color: var(--soft-pink);
   }
-
+ 
   /* ========== PANTRY SECTION ========== */
   .pantry-mockup {
     background: var(--off-white);
@@ -684,7 +684,7 @@
     padding: 3rem;
     text-align: center;
   }
-
+ 
   .pantry-title {
     font-family: var(--display);
     font-size: 1.5rem;
@@ -692,7 +692,7 @@
     margin-bottom: 1.5rem;
     color: var(--charcoal);
   }
-
+ 
   .pantry-tags {
     display: flex;
     flex-wrap: wrap;
@@ -700,7 +700,7 @@
     justify-content: center;
     margin-bottom: 2rem;
   }
-
+ 
   .pantry-tag {
     background: white;
     padding: 0.5rem 1rem;
@@ -710,7 +710,7 @@
     color: var(--charcoal);
     font-weight: 500;
   }
-
+ 
   .pantry-match {
     padding: 1rem;
     background: var(--plum);
@@ -718,18 +718,18 @@
     border-radius: 12px;
     font-weight: 600;
   }
-
+ 
   /* ========== FOUNDER ========== */
   .founder {
     padding: 6rem 2rem;
     background: var(--white);
   }
-
+ 
   .founder-inner {
     max-width: 720px;
     margin: 0 auto;
   }
-
+ 
   .founder-quote {
     font-family: var(--display);
     font-size: clamp(1.5rem, 3vw, 2.25rem);
@@ -741,27 +741,27 @@
     padding-left: 2rem;
     border-left: 4px solid var(--red);
   }
-
+ 
   .founder-quote em {
     color: var(--red);
     font-weight: 600;
   }
-
+ 
   .founder-attribution {
     padding-left: 2rem;
   }
-
+ 
   .founder-name {
     font-weight: 700;
     color: var(--charcoal);
     margin-bottom: 0.25rem;
   }
-
+ 
   .founder-role {
     color: var(--gray);
     font-size: 0.95rem;
   }
-
+ 
   /* ========== WAITLIST (PLUM) ========== */
   .waitlist {
     background: var(--plum);
@@ -771,7 +771,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .waitlist::before {
     content: '';
     position: absolute;
@@ -783,36 +783,36 @@
     background: radial-gradient(circle, rgba(255, 58, 45, 0.2) 0%, transparent 55%);
     pointer-events: none;
   }
-
+ 
   .waitlist-inner {
     position: relative;
     z-index: 1;
     max-width: 540px;
     margin: 0 auto;
   }
-
+ 
   .waitlist h2 {
     color: white;
     margin-bottom: 1rem;
   }
-
+ 
   .waitlist h2 em {
     color: var(--soft-pink);
   }
-
+ 
   .waitlist-lead {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.125rem;
     margin-bottom: 2.5rem;
   }
-
+ 
   .waitlist-form {
     display: flex;
     gap: 0.5rem;
     max-width: 480px;
     margin: 0 auto;
   }
-
+ 
   .waitlist-form input {
     flex: 1;
     padding: 1.1rem 1.5rem;
@@ -825,22 +825,22 @@
     outline: none;
     transition: all 0.2s ease;
   }
-
+ 
   .waitlist-form input::placeholder {
     color: rgba(255, 255, 255, 0.5);
   }
-
+ 
   .waitlist-form input:focus {
     border-color: var(--soft-pink);
     background: rgba(255, 255, 255, 0.15);
   }
-
+ 
   .waitlist-form button {
     border: none;
     cursor: pointer;
     font-family: var(--body);
   }
-
+ 
   .waitlist-success {
     display: none;
     padding: 1.5rem;
@@ -850,21 +850,21 @@
     font-weight: 600;
     color: white;
   }
-
+ 
   .waitlist-success.show { display: block; }
-
+ 
   /* ========== FOOTER ========== */
   footer {
     background: var(--plum-deep);
     color: white;
     padding: 4rem 2rem 2rem;
   }
-
+ 
   .footer-inner {
     max-width: 1200px;
     margin: 0 auto;
   }
-
+ 
   .footer-top {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -873,7 +873,7 @@
     padding-bottom: 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-
+ 
   .footer-brand {
     font-family: var(--display);
     font-size: 2rem;
@@ -882,18 +882,18 @@
     letter-spacing: -0.02em;
     color: white;
   }
-
+ 
   .footer-brand em {
     font-style: italic;
     color: var(--red);
   }
-
+ 
   .footer-tagline {
     color: rgba(255, 255, 255, 0.6);
     max-width: 320px;
     line-height: 1.5;
   }
-
+ 
   .footer-col-title {
     font-weight: 700;
     font-size: 0.85rem;
@@ -902,7 +902,7 @@
     margin-bottom: 1.25rem;
     color: white;
   }
-
+ 
   .footer-col a {
     display: block;
     color: rgba(255, 255, 255, 0.6);
@@ -911,18 +911,18 @@
     font-size: 0.95rem;
     transition: color 0.2s ease;
   }
-
+ 
   .footer-col a:hover {
     color: var(--soft-pink);
   }
-
+ 
   .footer-bottom {
     display: flex;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.4);
     font-size: 0.85rem;
   }
-
+ 
   /* ========== ANIMATIONS ========== */
   @keyframes fadeInUp {
     from {
@@ -934,47 +934,47 @@
       transform: translateY(0);
     }
   }
-
+ 
   /* ========== MOBILE ========== */
   @media (max-width: 900px) {
     .hero { padding: 8rem 1.5rem 4rem; }
-
+ 
     .hero-grid {
       grid-template-columns: 1fr;
       gap: 3rem;
       text-align: center;
     }
-
+ 
     .hero-lead { margin: 0 auto 2.5rem; }
     .hero-ctas { justify-content: center; }
     .launch-badge { margin: 0 auto 2rem; }
-
+ 
     .phone-wrap { order: 2; }
-
+ 
     .features-grid {
       grid-template-columns: 1fr;
     }
-
+ 
     .problem-grid {
       grid-template-columns: 1fr;
     }
-
+ 
     .footer-top {
       grid-template-columns: 1fr;
       gap: 2rem;
     }
-
+ 
     .footer-bottom {
       flex-direction: column;
       gap: 1rem;
       text-align: center;
     }
-
+ 
     section { padding: 4rem 1.5rem; }
-
+ 
     nav { padding: 1rem 1.5rem; }
   }
-
+ 
   @media (max-width: 600px) {
     .waitlist-form { flex-direction: column; }
     .hero-ctas { flex-direction: column; align-items: stretch; }
@@ -983,21 +983,21 @@
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="nav-inner">
     <a href="/" class="logo">Meal<em>solved</em></a>
     <a href="#waitlist" class="nav-cta">Join waitlist</a>
   </div>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <div class="launch-badge">LAUNCHING JUNE 15, 2026</div>
+      <div class="launch-badge">LAUNCHING JUNE 15 · ANDROID FIRST</div>
       <h1>Dinner,<br><em>solved.</em></h1>
-      <p class="hero-lead">The app that tells you what to cook tonight — so you can stop staring at the fridge at 5:47pm wondering what to feed everyone.</p>
+      <p class="hero-lead">The app that tells you what to cook tonight — so you can stop staring at the fridge at 5:47pm wondering what to feed everyone. Launching on Google Play June 15. iOS coming September 2026.</p>
       <div class="hero-ctas">
         <a href="#waitlist" class="btn-primary">Join the waitlist</a>
         <a href="#how" class="btn-secondary">See how it works →</a>
@@ -1032,7 +1032,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PROBLEM (PLUM) -->
 <section class="problem">
   <div class="problem-inner">
@@ -1061,7 +1061,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- HOW IT WORKS (WHITE) -->
 <section id="how">
   <div class="container">
@@ -1089,7 +1089,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- STAT CALLOUT (PLUM DEEP) -->
 <section class="stat">
   <div class="stat-inner">
@@ -1097,7 +1097,7 @@
     <div class="stat-label">The average family spends <em>240 hours a year</em> deciding what to eat.<br>Mealsolved gives that time back.</div>
   </div>
 </section>
-
+ 
 <!-- PANTRY (WHITE) -->
 <section>
   <div class="container">
@@ -1127,7 +1127,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOUNDER (WHITE) -->
 <section class="founder">
   <div class="founder-inner">
@@ -1139,14 +1139,14 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- WAITLIST (PLUM) -->
 <section id="waitlist" class="waitlist">
   <div class="waitlist-inner">
     <div class="eyebrow eyebrow-light">EARLY ACCESS</div>
     <h2>Be the first to <em>know.</em></h2>
-    <p class="waitlist-lead">Join the waitlist and get notified the moment Mealsolved launches on Google Play — June 15, 2026.</p>
-
+    <p class="waitlist-lead">Join the waitlist and get notified the moment Mealsolved launches. Google Play on <strong style="color: white;">June 15, 2026</strong> — iOS in September.</p>
+ 
     <!-- MAILCHIMP EMBEDDED FORM (styled to match our brand) -->
     <form
       action="https://app.us11.list-manage.com/subscribe/post?u=18746ba6cd97c6e66936a4ce7&amp;id=9083df20da&amp;f_id=00270fe1f0"
@@ -1163,11 +1163,11 @@
       </div>
       <button type="submit" name="subscribe" class="btn-primary">Notify me</button>
     </form>
-
-    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 2rem;">No spam, just one email when we launch.</p>
+ 
+    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 2rem;">Android users get it first. iPhone users get notified when iOS goes live. No spam — just one email per platform when we launch.</p>
   </div>
 </section>
-
+ 
 <!-- FOOTER (PLUM DEEP) -->
 <footer>
   <div class="footer-inner">
@@ -1198,7 +1198,7 @@
     </div>
   </div>
 </footer>
-
+ 
 <script>
   // Scroll animations for cards
   const observer = new IntersectionObserver((entries) => {
@@ -1209,7 +1209,7 @@
       }
     });
   }, { threshold: 0.1 });
-
+ 
   document.querySelectorAll('.feature-card, .problem-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -1217,6 +1217,7 @@
     observer.observe(el);
   });
 </script>
-
+ 
 </body>
 </html>
+ 
