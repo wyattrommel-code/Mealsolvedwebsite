@@ -13,17 +13,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- MAILCHIMP POPUP - Controlled trigger only, no auto-popup -->
-<script>
-  // Pre-set Mailchimp's storage flag to PREVENT auto-popup on page load
-  // We will trigger it manually when the user clicks a button
-  (function() {
-    try {
-      localStorage.setItem('MCPopupClosed', 'yes');
-      localStorage.setItem('MCPopupSubscribed', 'yes');
-    } catch(e) {}
-  })();
-</script>
 <style>
   :root {
     --plum: #5C1F2E;
@@ -998,7 +987,7 @@
 <nav>
   <div class="nav-inner">
     <a href="/" class="logo">Meal<em>solved</em></a>
-    <a href="#" onclick="showSignup(event)" class="nav-cta">Join waitlist</a>
+    <a href="#waitlist" class="nav-cta">Join waitlist</a>
   </div>
 </nav>
 
@@ -1010,7 +999,7 @@
       <h1>Dinner,<br><em>solved.</em></h1>
       <p class="hero-lead">The app that tells you what to cook tonight — so you can stop staring at the fridge at 5:47pm wondering what to feed everyone.</p>
       <div class="hero-ctas">
-        <a href="#" onclick="showSignup(event)" class="btn-primary">Join the waitlist</a>
+        <a href="#waitlist" class="btn-primary">Join the waitlist</a>
         <a href="#how" class="btn-secondary">See how it works →</a>
       </div>
     </div>
@@ -1158,7 +1147,22 @@
     <h2>Be the first to <em>know.</em></h2>
     <p class="waitlist-lead">Join the waitlist and get notified the moment Mealsolved launches on Google Play — June 15, 2026.</p>
 
-    <a href="#" onclick="showSignup(event)" class="btn-primary" style="font-size: 1.1rem; padding: 1.25rem 3rem;">Join the waitlist</a>
+    <!-- MAILCHIMP EMBEDDED FORM (styled to match our brand) -->
+    <form
+      action="https://app.us11.list-manage.com/subscribe/post?u=18746ba6cd97c6e66936a4ce7&amp;id=9083df20da&amp;f_id=00270fe1f0"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      target="_blank"
+      class="waitlist-form"
+      novalidate>
+      <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="your@email.com" required>
+      <!-- Anti-bot honeypot (DO NOT REMOVE - Mailchimp requires this) -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_18746ba6cd97c6e66936a4ce7_9083df20da" tabindex="-1" value="">
+      </div>
+      <button type="submit" name="subscribe" class="btn-primary">Notify me</button>
+    </form>
 
     <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 2rem;">No spam, just one email when we launch.</p>
   </div>
@@ -1196,33 +1200,6 @@
 </footer>
 
 <script>
-  // Trigger Mailchimp popup ONLY when user clicks a "Join the waitlist" button
-  function showSignup(e) {
-    if (e) e.preventDefault();
-
-    // Clear the suppression flags we set on load
-    try {
-      localStorage.removeItem('MCPopupClosed');
-      localStorage.removeItem('MCPopupSubscribed');
-      sessionStorage.removeItem('MCPopupClosed');
-      sessionStorage.removeItem('MCPopupSubscribed');
-    } catch(err) {}
-
-    // Load the Mailchimp signup form script and trigger it
-    if (typeof window.dojoRequire !== 'undefined') {
-      // Mailchimp loader is already on page - trigger immediately
-      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
-        L.start({"baseUrl":"mc.us21.list-manage.com","uuid":"18746ba6cd97c6e66936a4ce7","lid":"93a4db93d5","uniqueMethods":true});
-      });
-    } else {
-      // Load Mailchimp script for first time
-      var script = document.createElement('script');
-      script.id = 'mcjs';
-      script.src = 'https://chimpstatic.com/mcjs-connected/js/users/18746ba6cd97c6e66936a4ce7/93a4db93d5fa44971d1e6ec5e.js';
-      document.body.appendChild(script);
-    }
-  }
-
   // Scroll animations for cards
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
