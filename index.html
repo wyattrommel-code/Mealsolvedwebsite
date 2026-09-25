@@ -6,7 +6,7 @@
 <title>Mealsolved — Dinner, solved.</title>
 <meta name="description" content="The app that tells you what to cook tonight. Built for overwhelmed parents and young adults who are tired of staring at the fridge.">
 <meta property="og:title" content="Mealsolved — Dinner, solved.">
-<meta property="og:description" content="The app that tells you what to cook tonight. Launching May 15, 2026.">
+<meta property="og:description" content="Less deciding. More eating. Join the Mealsolved Android test.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mealsolved.app">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -808,6 +808,7 @@
  
   .waitlist-form {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     max-width: 480px;
     margin: 0 auto;
@@ -840,6 +841,11 @@
     cursor: pointer;
     font-family: var(--body);
   }
+  .waitlist-form label { text-align: left; font-size: 0.95rem; margin-top: 0.8rem; }
+  .waitlist-form select, .waitlist-form textarea { width: 100%; padding: 1rem; border: 2px solid #d8b6bd; border-radius: 16px; font: inherit; background: white; color: #191919; }
+  .waitlist-form input[type="email"] { min-width: 0; }
+  .waitlist-form .consent { display: flex; align-items: flex-start; gap: 0.75rem; line-height: 1.5; margin-bottom: 1rem; }
+  .waitlist-form input[type="checkbox"] { flex: none; width: 22px; height: 22px; margin-top: 0.2rem; accent-color: var(--red); }
  
   .waitlist-success {
     display: none;
@@ -987,7 +993,7 @@
 <nav>
   <div class="nav-inner">
     <a href="/" class="logo">Meal<em>solved</em></a>
-    <a href="#waitlist" class="nav-cta">Join waitlist</a>
+    <a href="#waitlist" class="nav-cta">Join Android testing</a>
   </div>
 </nav>
  
@@ -995,11 +1001,11 @@
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <div class="launch-badge">LAUNCHING JUNE 15 · ANDROID FIRST</div>
+      <div class="launch-badge">ANDROID TESTING · HELP SHAPE MEALSOLVED</div>
       <h1>Dinner,<br><em>solved.</em></h1>
-      <p class="hero-lead">The app that tells you what to cook tonight — so you can stop staring at the fridge at 5:47pm wondering what to feed everyone. Launching on Google Play June 15. iOS coming September 2026.</p>
+      <p class="hero-lead">Less deciding. More eating. Get three meal ideas, keep a favorite, and refresh the rest. Mealsolved is currently testing on Android.</p>
       <div class="hero-ctas">
-        <a href="#waitlist" class="btn-primary">Join the waitlist</a>
+        <a href="#waitlist" class="btn-primary">Join Android testing</a>
         <a href="#how" class="btn-secondary">See how it works →</a>
       </div>
     </div>
@@ -1015,12 +1021,12 @@
           </div>
           <div class="phone-btn-row">
             <div class="phone-btn-small">
-              <div class="phone-btn-small-title">Pick For Me</div>
-              <div class="phone-btn-small-sub">Surprise me</div>
+              <div class="phone-btn-small-title">Help Me Decide</div>
+              <div class="phone-btn-small-sub">Three ideas · your filters</div>
             </div>
             <div class="phone-btn-small">
-              <div class="phone-btn-small-title">Feeling Bold</div>
-              <div class="phone-btn-small-sub">Challenge · 3 picks</div>
+              <div class="phone-btn-small-title">Sweet Treat</div>
+              <div class="phone-btn-small-sub">Something sweet</div>
             </div>
           </div>
           <div class="phone-btn-pantry">
@@ -1067,8 +1073,8 @@
   <div class="container">
     <div class="section-header">
       <div class="eyebrow">HOW IT WORKS</div>
-      <h2>Three buttons.<br>No thinking required.</h2>
-      <p class="section-lead">Mealsolved gives you a decision, not another problem to solve.</p>
+      <h2>Three ideas.<br>A simpler decision.</h2>
+      <p class="section-lead">Find a starting point, keep what you like, and choose what sounds good.</p>
     </div>
     <div class="features-grid">
       <div class="feature-card">
@@ -1078,13 +1084,13 @@
       </div>
       <div class="feature-card">
         <div class="feature-number">02</div>
-        <div class="feature-title">Pick For Me</div>
-        <div class="feature-desc">Let us surprise you. Three random recipes from the full library — because sometimes you just need someone to decide for you.</div>
+        <div class="feature-title">Help Me Decide</div>
+        <div class="feature-desc">Start with three recipes. Open filters to choose a meal type, protein, cuisine, or cooking time. Keep a choice you like while refreshing the others.</div>
       </div>
       <div class="feature-card">
         <div class="feature-number">03</div>
-        <div class="feature-title">Feeling Bold</div>
-        <div class="feature-desc">For when you want to level up. Three recipes that take skill but deliver big flavor — perfect for weekends.</div>
+        <div class="feature-title">Sweet Treat</div>
+        <div class="feature-desc">In the mood for dessert? Explore hot, cold, and quick-and-easy ideas with the Sweet Treat button.</div>
       </div>
     </div>
   </div>
@@ -1093,8 +1099,8 @@
 <!-- STAT CALLOUT (PLUM DEEP) -->
 <section class="stat">
   <div class="stat-inner">
-    <div class="stat-number">240<em>hrs</em></div>
-    <div class="stat-label">The average family spends <em>240 hours a year</em> deciding what to eat.<br>Mealsolved gives that time back.</div>
+    <div class="stat-number">Less <em>deciding.</em></div>
+    <div class="stat-label">Three choices. Keep a favorite. Refresh the rest.<br>Make room for the rest of your evening.</div>
   </div>
 </section>
  
@@ -1105,8 +1111,8 @@
       <div>
         <div class="eyebrow">PANTRY MODE</div>
         <h2>Cook what you <em>already have.</em></h2>
-        <p class="section-lead" style="margin-bottom: 2rem;">Tell Mealsolved what's in your fridge and pantry. We show you every recipe you can make right now — no grocery run required.</p>
-        <p style="color: var(--gray);">The more you use it, the smarter it gets. Mealsolved learns what you like, what you have, and what you're tired of.</p>
+        <p class="section-lead" style="margin-bottom: 2rem;">Add ingredients to your pantry and explore recipes that match what you have. Check each recipe for anything else you need.</p>
+        <p style="color: var(--gray);">Set your food preferences, save favorites, and hide recipes you do not want to see. Put meals you like into your planner.</p>
       </div>
       <div class="pantry-mockup">
         <div class="pantry-title">Your Pantry</div>
@@ -1122,7 +1128,7 @@
           <span class="pantry-tag">butter</span>
           <span class="pantry-tag">basil</span>
         </div>
-        <div class="pantry-match">→ 14 recipes match your pantry</div>
+        <div class="pantry-match">Explore recipes with your pantry ingredients</div>
       </div>
     </div>
   </div>
@@ -1144,8 +1150,8 @@
 <section id="waitlist" class="waitlist">
   <div class="waitlist-inner">
     <div class="eyebrow eyebrow-light">EARLY ACCESS</div>
-    <h2>Be the first to <em>know.</em></h2>
-    <p class="waitlist-lead">Join the waitlist and get notified the moment Mealsolved launches. Google Play on <strong style="color: white;">June 15, 2026</strong> — iOS in September.</p>
+    <h2>Help shape <em>Mealsolved.</em></h2>
+    <p class="waitlist-lead">Interested in testing on Android? Leave your email for testing updates. Access is by invitation, and signing up does not install the app or grant immediate access.</p>
  
     <!-- MAILCHIMP EMBEDDED FORM (styled to match our brand) -->
     <form
@@ -1155,16 +1161,25 @@
       name="mc-embedded-subscribe-form"
       target="_blank"
       class="waitlist-form"
-      novalidate>
-      <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="your@email.com" required>
+>
+      <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="your@email.com" aria-label="Email for Android testing updates" autocomplete="email" required>
+      <label for="signup-source">Where did you hear about us? (optional)</label>
+      <select id="signup-source" name="SOURCE">
+        <option value="">Choose if you like</option>
+        <option>TikTok</option><option>Instagram</option><option>Facebook</option><option>YouTube</option><option>Friend</option><option>Other</option>
+      </select>
+      <label for="signup-feedback">What would you like help with? (optional)</label>
+      <textarea id="signup-feedback" name="FEEDBACK" rows="3" maxlength="250" placeholder="For example: choosing dinner after work"></textarea>
+      <input type="hidden" id="marketing-value" name="MARKETING" value="No">
+      <label class="consent" for="marketing-opt-in"><input type="checkbox" id="marketing-opt-in">Also send me occasional Mealsolved news and meal ideas. Optional; not needed for testing updates.</label>
       <!-- Anti-bot honeypot (DO NOT REMOVE - Mailchimp requires this) -->
       <div style="position: absolute; left: -5000px;" aria-hidden="true">
         <input type="text" name="b_18746ba6cd97c6e66936a4ce7_9083df20da" tabindex="-1" value="">
       </div>
-      <button type="submit" name="subscribe" class="btn-primary">Notify me</button>
+      <button type="submit" name="subscribe" class="btn-primary">Request testing updates</button>
     </form>
  
-    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 2rem;">Android users get it first. iPhone users get notified when iOS goes live. No spam — just one email per platform when we launch.</p>
+    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 2rem;">Use the email associated with your Google Play account. We will send testing access instructions separately. There is no confirmed iPhone release date yet.</p>
   </div>
 </section>
  
@@ -1179,7 +1194,7 @@
       <div class="footer-col">
         <div class="footer-col-title">Links</div>
         <a href="#how">How it works</a>
-        <a href="#waitlist">Waitlist</a>
+        <a href="#waitlist">Android testing</a>
         <a href="mailto:support@mealsolved.app">Contact</a>
       </div>
       <div class="footer-col">
@@ -1200,6 +1215,12 @@
 </footer>
  
 <script>
+  const marketingCheckbox = document.getElementById('marketing-opt-in');
+  const marketingValue = document.getElementById('marketing-value');
+  const syncMarketing = () => { marketingValue.value = marketingCheckbox.checked ? 'Yes' : 'No'; };
+  marketingCheckbox.addEventListener('change', syncMarketing);
+  document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', syncMarketing);
+  window.addEventListener('pageshow', syncMarketing);
   // Scroll animations for cards
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
